@@ -291,8 +291,8 @@ goto _crash_
 %say%╠═════════════════════════════════════════════╣
 %say%║ Type the number you wish to use             ║
 %say%╠═════════════════════════════════════════════╣
-%say%║ 1: Login                                    ║
-%say%║ 2: Register                                 ║
+%say%║ 1: Login                3: Report           ║
+%say%║ 2: Register             or $redirect        ║
 %say%╚═════════════════════════════════════════════╝
 exit /b 0
 
