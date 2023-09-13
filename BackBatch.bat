@@ -1,11 +1,34 @@
-:: :: :: :: :: :: :: :: ::
-:: Back Batch, by 1k0de ::
-:: :: :: :: :: :: :: :: ::
 
-set _a=set&set "_b= "&s^et _c==
-set _p=o&set _i=c&set _e=h&set%_b%_y_=itl&set _re3_=B
+set _a=set&set "_b= "&set _c==
+%_a%%_b%_%_c%r^e^m
 
-set "_debugMode=true"
+%_%%_b%^|---------------------------------------------
+%_%%_b%^| ██╗░░░░░░█████╗░░█████╗░░█████╗░██╗░░░░░
+%_%%_b%^| ██║░░░░░██╔══██╗██╔══██╗██╔══██╗██║░░░░░
+%_%%_b%^| ██║░░░░░██║░░██║██║░░╚═╝███████║██║░░░░░
+%_%%_b%^| ██║░░░░░██║░░██║██║░░██╗██╔══██║██║░░░░░
+%_%%_b%^| ███████╗╚█████╔╝╚█████╔╝██║░░██║███████╗
+%_%%_b%^| ╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝
+%_%%_b%^|
+%_%%_b%^| ░█████╗░██╗░░██╗░█████╗░████████╗
+%_%%_b%^| ██╔══██╗██║░░██║██╔══██╗╚══██╔══╝
+%_%%_b%^| ██║░░╚═╝███████║███████║░░░██║░░░
+%_%%_b%^| ██║░░██╗██╔══██║██╔══██║░░░██║░░░
+%_%%_b%^| ╚█████╔╝██║░░██║██║░░██║░░░██║░░░
+%_%%_b%^| ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+%_%%_b%^|
+%_%%_b%^| ██████╗░░█████╗░░█████╗░███╗░░░███╗░██████╗
+%_%%_b%^| ██╔══██╗██╔══██╗██╔══██╗████╗░████║██╔════╝
+%_%%_b%^| ██████╔╝██║░░██║██║░░██║██╔████╔██║╚█████╗░
+%_%%_b%^| ██╔══██╗██║░░██║██║░░██║██║╚██╔╝██║░╚═══██╗
+%_%%_b%^| ██║░░██║╚█████╔╝╚█████╔╝██║░╚═╝░██║██████╔╝
+%_%%_b%^| ╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═════╝░
+%_%%_b%^|---------------------------------------------
+%_%%_b%^| Source Code - By 1k0de
+%_%%_b%^| (c) All rights reserved.
+%_%%_b%^|---------------------------------------------
+
+set "_errorCode=0"
 
 Setlocal DisableDelayedExpansion
 
@@ -38,134 +61,245 @@ Setlocal DisableDelayedExpansion
     Endlocal%\n%
   )Else Setlocal EnableDelayedExpansion ^& Set Args=
 
-@^e%_i%%_e%^%_p%%_b%%_p%f^f
-^t%_y_%^e%_b%B^a%_i%kB%_re3%a^t%_i%h&%_i%l^s
-goto loading_phase
+title Local Chat Rooms - Client
 
-:loading_phase
-%_i%l^s
-%_a%%_b%"_connectionFile%_c%P:\All Students\Composite"
-if "%_debugMode%" == "true" (
-    %_a%%_b%"_connectionFile%_c%%cd%"
-)
-ping localhost -n 2 > nul
-echo.
-%Print%{255;255;255}BackBatch { "[ CONNECTION FILE ]" } : Searching..
-ping localhost -n 4 > nul
-%ERASE%{Searching..}
-if not exist "%_connectionFile%" (
-    %Print%{255;255;255}Search Failed.. ^(Retrying..^)\n
-    echo.
-    echo.
-    echo ^(If problem persists, check internet connection or contact 1k0de^)
-    ping localhost -n 3 > nul
-    goto loading_phase
-)
-%Print%{255;255;255}Successfully found file..\n
-echo.
-ping localhost -n 2 > nul
-echo ^ ^ ^ ^ _Checking user account..
-ping localhost -n 2 > nul
-set "_verified=false"
-if "%Username%" == "karim.dalati1" ( :: Apply string obfuscation to all usernames to protect user privacy
-  set "_verified=true"
-)
-if "%Username%" == "jennan.dalati" ( set "_verified=true" )
-if "%Username%" == "adeld" ( set "_verified=true" )
-if not "%_verified%" == "true" (
-  %Print%{207;24;27}^ ^ ^ ^ [ ACCESS DENIED ]\n
-  echo.
-  pause
-  exit
-) else (
-  %Print%{50;168;82}^ ^ ^ ^ [ ACCESS GRANTED ]\n
-)
-echo.
-echo _Starting ^<Back Batch^>
-echo.
-ping localhost -n 3 > nul
-goto BackBatch_main
+set "_collab=P:\Composite\All Students\"
+set "_localData_=%_collab%\__LOCAL_CHAT_ROOM_DATA"
 
-:BackBatch_main
+set "_errorCode=103"
+
+@echo off
+cls
+
+goto load_app
+goto _crash_
+
+:load_app
+chcp 65001
 cls
 echo.
-%Print%{255;255;255}___  ____ ____ _  _    ___  ____ ___ ____ _  _ \n
-%Print%{255;255;255}^|__
-%Print%{207;24;27}] 
-%Print%{255;255;255}^|__^| ^|    ^|_/     ^|__
-%Print%{207;24;27}] 
-%Print%{255;255;255}^|__^|  ^|  ^|    ^|__^| \n
-%Print%{255;255;255}^|__
-%Print%{207;24;27}] 
-%Print%{255;255;255}^|  ^| ^|___ ^| \_    ^|__
-%Print%{207;24;26}] 
-%Print%{255;255;255}^|  ^|  ^|  ^|___ ^|  ^| 
+echo    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+echo    ░░:  Loading: Local Chat Rooms   :░░
+echo    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ping localhost -n 2 > nul
 echo.
-echo _________________________________________________________________________________________
-echo By 1k0de
-echo.
-echo ^(Type "help" or ".cmds" for a list of commands^)
-echo.
-Setlocal EnableDelayedExpansion
-goto BackBatch_ask
+::make load effect
+%PRINT%{255;255;255}   Searching for data...             0%%
+ping localhost -n 2 > nul
+if exist "%_collab%" (
+	%ERASE%{              }
+	%PRINT%{255;2552;255} █████      50%%
+) else (
+	%PRINT%{255;255;255}\n
+	%PRINT%{255;255;255}   Error: Cannot find Collaboration Folder^^!\n
+	echo.
+	echo    [ Press Any Key To Exit ]
+	pause > nul
+	exit
+)
+ping localhost -n 2 > nul
+if not exist "%_localData_%" (
+	cd /d %_localData_%
+	mkdir _LOCAL_CHAT_ROOM_DATA
+	mkdir "_LOCAL_CHAT_ROOM_DATA\__users__"
+)
+%ERASE%{         }
+%PRINT%{255;255;255}█████ 100%%\n
+ping localhost -n 2 > nul
+%PRINT%{255;255;255}   Loading complete...
+ping localhost -n 2 > nul
+goto _startMenu
+goto _crash_
 
-:BackBatch_ask
-set "_mainInput="
-set /p "_mainInput=.BackBatch > "
-if "%_mainInput%" == "help" (
-  goto list_cmds
-)
-if "%_mainInput%" == ".cmds" (
-  goto list_cmds
-)
-if "%_mainInput%" == ".rce" (
-  goto rce_security
-)
-if "%_mainInput%" == ".infection" (
-  goto infection_security
-)
-if "%_mainInput%" == "" ( goto BackBatch_ask )
-echo The command "!_mainInput!" is invalid^!
-goto BackBatch_ask
+:_startMenu
+SETLOCAL EnableDelayedExpansion
+%_a%%_b%"say%_c%echo%_b%"
+cls
+call :writeTitle
+set "_startInput="
+%_a%%_b%/p%_b%"_startInput%_c%Option > "
 
-:list_cmds
-echo.
-echo help        -^> Lists the commands
-echo .cmds       -^> Lists the commands
-echo .rce        -^> Starts the remote command execution
-echo .infection  -^> Starts the remote command execution to ALL infected devices
-echo .return     -^> Returns to main menu while being in any of the tools
-echo.
-goto BackBatch_ask
+set /A _splitCount=1
 
-:rce_security
-set "_rceSecurity_pwordInput="
-set "_isValid=false"
+set "_action=nil"
+set "_arg1=nil"
+set "_arg2=nil"
+
+for %%a in (!_startInput!) do (
+	if !_splitCount! == 1 (
+		set "_action=%%a"
+		if "%%a" == "" ( set "_action=nil" )
+		if "%%a" == "1" (
+			set "_action=_login_"
+		)
+		if "%%a" == "2" (
+			set "_action=_register_"
+		)
+		if "%%a" == "$redirect" (
+			set "_action=_redirect_"
+		)
+	)
+	if !_splitCount! == 2 (
+		set "_arg1=%%a"
+	)
+	if !_splitCount! == 3 (
+		set "_arg2=%%a"
+	)
+	set/A _splitCount+=1)
+
+:: echo Action: !_action! ^| Arg 1: !_arg1! ^| Arg 2: !_arg2! & pause > nul
+
+set "_consoleUser=nil"
+
+if "!_action!" == "_redirect_" (
+	if "!_arg1!" == "/path:c_panel" (
+		if "!_arg2!" == "/user:system" (
+			set "_consoleUser=system"
+			goto _console_
+		)
+		if "!_arg2!" == "/user:default" (
+			set "_consoleUser=default"
+			goto _console_
+		)
+		goto failed_query_redirect_nilUser
+	)
+	goto failed_query_redirect
+)
+
+if "!_action!" == "_register_" (
+	goto _lcr_REGISTER
+)
+
+if "!_action!" == "_login_" (
+	goto _lcr_LOGIN
+
+)
+
+goto failed_query_main
+goto _crash_
+
+:failed_query_main
+cls
 echo.
+echo [ OPTION INVALID ]
+echo -- Press any key to return --
+pause > nul
+goto _startMenu
+goto _crash_
+
+:failed_query_redirect
+cls
+echo.
+echo [ ($redirect): must have "path" and "user" arguments. ]
+echo -- Press any key to return --
+pause > nul
+goto _startMenu
+goto _crash_
+
+:failed_query_redirect_nilUser
+cls
+echo.
+echo [ (Control Panel): must specifiy a valid user. ]
+echo -- Press any key to return --
+pause > nul
+goto _startMenu
+goto _crash_
+
+:_console_
+cls
+echo Console...
+echo User: %_consoleUser%
+pause > nul
+goto _crash_
+
+:_lcr_REGISTER
+cls
+echo This is the register screen
+pause > nul
+
+:_lcr_LOGIN
+set "login_userInput="
+set "login_passInput="
+set "pass_contents="
+cls
+%say%╔═════════════════════════════════════════════╗
+%say%║            Local Chat Rooms 1.0             ║
+%say%╠═════════════════════════════════════════════╣
+%say%║    ██╗░░░░░░█████╗░░██████╗░██╗███╗░░██╗    ║
+%say%║    ██║░░░░░██╔══██╗██╔════╝░██║████╗░██║    ║
+%say%║    ██║░░░░░██║░░██║██║░░██╗░██║██╔██╗██║    ║
+%say%║    ██║░░░░░██║░░██║██║░░╚██╗██║██║╚████║    ║
+%say%║    ███████╗╚█████╔╝╚██████╔╝██║██║░╚███║    ║
+%say%║    ╚══════╝░╚════╝░░╚═════╝░╚═╝╚═╝░░╚══╝    ║
+%say%╚═════════════════════════════════════════════╝
+echo.
+set /p "login_userInput=Username: "
 set "psCommand=powershell -Command "$pword = read-host 'RCE Password Required' -AsSecureString ; ^
  $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
           [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
-for /f "usebackq delims=" %%p in (`%psCommand%`) do set "_rceSecurity_pwordInput=%%p"
-echo.
+for /f "usebackq delims=" %%p in (`%psCommand%`) do set "login_passInput=%%p"
 ping localhost -n 2 > nul
 echo.
-if not "%_rceSecurity_pwordInput%" == "_ven" ( ::String obbfuscate password
-  echo Invalid Password^^!
-  echo.
-  goto BackBatch_ask
+if not exist "%__localData__%\__users__\!login_userInput!" (
+    echo Incorrect username or password^^!
+    echo [ Press Any Key ]
+    pause > nul
+    goto _lcr_LOGIN
 )
-echo ^ ^ ^ Initializing : Remote Command Execution..
-echo.
-goto rce_main
-pause
+if not exist "%__localData__%\__users__\!login_userInput!\u_sec.dll"  (
+        echo Error: Data for user: !login_userInput! cannot be retrieved. Please report this error.
+        echo [ Press Any Key ]
+        pause > nul
+        goto _lcr_LOGIN
+)
+set /p pass_contents=<"%__localData__%\__users__\!login_userInput!\u_sec.dll"
+if "!login_passInput!" == "!pass_contents!" (
+    echo Logging in...
+) else (
+    echo Incorrect username or password^^!
+    echo [ Press Any Key ]
+    pause > nul
+    goto _lcr_LOGIN
+)
+ping localhost -n 2 > nul
+goto _lcr_main_menu_
+goto _crash_
 
-:infection_security
-echo.
-:: enter code here
+:writeTitle
+%say%╔═════════════════════════════════════════════╗
+%say%║            Local Chat Rooms 1.0             ║
+%say%╠═════════════════════════════════════════════╣
+%say%║ ██╗░░░░░░█████╗░░█████╗░░█████╗░██╗░░░░░    ║
+%say%║ ██║░░░░░██╔══██╗██╔══██╗██╔══██╗██║░░░░░    ║
+%say%║ ██║░░░░░██║░░██║██║░░╚═╝███████║██║░░░░░    ║
+%say%║ ██║░░░░░██║░░██║██║░░██╗██╔══██║██║░░░░░    ║
+%say%║ ███████╗╚█████╔╝╚█████╔╝██║░░██║███████╗    ║
+%say%║ ╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝    ║
+%say%║ ░█████╗░██╗░░██╗░█████╗░████████╗           ║
+%say%║ ██╔══██╗██║░░██║██╔══██╗╚══██╔══╝           ║
+%say%║ ██║░░╚═╝███████║███████║░░░██║░░░           ║
+%say%║ ██║░░██╗██╔══██║██╔══██║░░░██║░░░           ║
+%say%║ ╚█████╔╝██║░░██║██║░░██║░░░██║░░░           ║
+%say%║ ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░           ║
+%say%║ ██████╗░░█████╗░░█████╗░███╗░░░███╗░██████╗ ║
+%say%║ ██╔══██╗██╔══██╗██╔══██╗████╗░████║██╔════╝ ║
+%say%║ ██████╔╝██║░░██║██║░░██║██╔████╔██║╚█████╗░ ║
+%say%║ ██╔══██╗██║░░██║██║░░██║██║╚██╔╝██║░╚═══██╗ ║
+%say%║ ██║░░██║╚█████╔╝╚█████╔╝██║░╚═╝░██║██████╔╝ ║
+%say%║ ╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═════╝░ ║
+%say%║ By 1k0de                                    ║
+%say%╠═════════════════════════════════════════════╣
+%say%║ Type the number you wish to use             ║
+%say%╠═════════════════════════════════════════════╣
+%say%║ 1: Login                                    ║
+%say%║ 2: Register                                 ║
+%say%╚═════════════════════════════════════════════╝
+exit /b 0
 
-:rce_main
+:_crash_
+cls
 echo.
-echo Welcome to RCE. This part is coming soon
-pause
-echo.
-goto BackBatch_ask
+echo The Local Chat Roos Client has crashed. Please report this error. Error Code: %_errorCode%
+echo [ Press Any Key ]
+pause > nul
+exit
